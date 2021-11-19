@@ -14,9 +14,9 @@ val lars = Person().apply {
     description = "Help people to evolve their potentials 🦅👾🎓"
   })
   hobbies = listOf(
-    Hobby().apply { description = "Gaming" },
-    Hobby().apply { description = "Music" }, 
-    Hobby().apply { description = "Learning" }
+    Hobby(description = "Gaming"),
+    Hobby(description = "Music"),
+    Hobby(description = "Learning"),
   )
 }
 ```
