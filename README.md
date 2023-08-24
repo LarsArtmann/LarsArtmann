@@ -7,15 +7,16 @@
 
 ```kotlin
 val lars = Person().apply {
-  code = listOf("Kotlin", "Java", "C#", "JS", "Shell")
-  tools = listOf("Google Cloud", "Event sourcing", "Intellij", "AWS", "Azure", "Everything else")
-  architechture = listOf("MVVM", "MVP", "MVC", "Microservices")
+  code = listOf("Kotlin", "Java", "C#", "JS", "Rust", "Typescript", "Elixir", "Go", "Python", "Shell")
+  tools = listOf("Google Cloud", "event sourcing", "Intellij", "AWS", "Azure", "Everything else")
+  architechture = listOf("Enterprise", "MicroServices", "monolith", "MVP")
   goals = listOf(Goal().apply {
-    description = "Help people to evolve their potentials 🦅👾🎓"
+    description = "Creating software that make peoples lifes easier"
   })
   hobbies = listOf(
     Hobby(description = "Gaming"),
     Hobby(description = "Music"),
+    Hobby(description = "Finance"),
     Hobby(description = "Learning"),
   )
 }
