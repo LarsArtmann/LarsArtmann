@@ -1,7 +1,7 @@
 <h2> Hi, I'm Lars Artmann! </h2>
 
 [![Linkedin: Lars Artmann](https://img.shields.io/badge/-Lars%20Artmann-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/larsartmann/)](https://www.linkedin.com/in/larsartmann/)
-[![GitHub abnegate](https://img.shields.io/github/followers/LartyHD?label=follow&style=social)](https://github.com/LartyHD)
+[![GitHub abnegate](https://img.shields.io/github/followers/LarsArtmann?label=follow&style=social)](https://github.com/LarsArtmann)
 
 ### A little more about me...  
 
