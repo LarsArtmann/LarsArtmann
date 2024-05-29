@@ -24,6 +24,6 @@ val lars = Person().apply {
 [![GitHub Stats Total](https://api.githubtrends.io/user/svg/LarsArtmann/langs?time_range=one_year&include_private=True&loc_metric=changed&theme=classic)](https://api.githubtrends.io/user/svg/LarsArtmann/langs?time_range=one_year&include_private=True&loc_metric=changed&theme=classic)
 [![GitHub Stats by Project](https://api.githubtrends.io/user/svg/LarsArtmann/repos?time_range=one_year&include_private=True&group=other&loc_metric=changed&theme=classic)](https://api.githubtrends.io/user/svg/LarsArtmann/repos?time_range=one_year&include_private=True&group=other&loc_metric=changed&theme=classic)
 
-<em>I love connecting with different people so if you want to say hi, I'll be happy to talk!</em>
+<em>I love connecting with different people so if you want to say hi, I'll be happy to talk! - [https://larsartmann.com/appointment](https://larsartmann.com/appointment)</em>
 
 ---
