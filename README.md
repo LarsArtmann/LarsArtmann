@@ -26,4 +26,13 @@ val lars = Person().apply {
 
 <em>I love connecting with different people so if you want to say hi, I'll be happy to talk! - [https://larsartmann.com/appointment](https://larsartmann.com/appointment)</em>
 
+## Historical Statistics
+
+### 2023
+![github-wrapped 2023](https://github.com/LarsArtmann/LarsArtmann/assets/23587853/b3af2c9c-58f1-4b57-996f-255c4bdc3ab1)
+
+### 2022
+![github-wrapped 2022](https://github.com/LarsArtmann/LarsArtmann/assets/23587853/ae2c5beb-ad95-4135-ab51-cd337c6c3be5)
+
+
 ---
