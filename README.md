@@ -28,11 +28,12 @@ val lars = Person().apply {
 
 ## Historical Statistics
 
-### 2023
-![github-wrapped 2023](https://github.com/LarsArtmann/LarsArtmann/assets/23587853/b3af2c9c-58f1-4b57-996f-255c4bdc3ab1)
+### GitHub Wrapped [2022 - 2024]
 
-### 2022
-![github-wrapped 2022](https://github.com/LarsArtmann/LarsArtmann/assets/23587853/ae2c5beb-ad95-4135-ab51-cd337c6c3be5)
-
+<p float="left">
+  <img alt="2022" src="https://github.com/LarsArtmann/LarsArtmann/assets/23587853/ae2c5beb-ad95-4135-ab51-cd337c6c3be5" width="33%" />
+  <img alt="2023" src="https://github.com/LarsArtmann/LarsArtmann/assets/23587853/b3af2c9c-58f1-4b57-996f-255c4bdc3ab1" width="33%" />
+  <img alt="2024" src="https://github.com/user-attachments/assets/6933c222-3c67-4cf6-a50f-2f7725dad29d" width="33%" />
+</p>
 
 ---
