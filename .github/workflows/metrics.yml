@@ -29,18 +29,12 @@ jobs:
           plugin_languages_indepth: yes
           plugin_languages_analysis_timeout: 15
           plugin_habits: no
-          plugin_achievements: yes
-          plugin_achievements_only: >-
-            polyglot, stargazer, explorer, infographile, octonaut, starship, arctic, pull-star, raconteur, shutterbug
-          plugin_achievements_display: compact
+          plugin_achievements: no
           plugin_notable: yes
           plugin_notable_indepth: yes
           plugin_notable_repositories: yes
           plugin_notable_filter: stars:>10
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: issue, pr, release, fork, review, star
+          plugin_activity: no
 
       - name: Featured repositories
         uses: lowlighter/metrics@latest
