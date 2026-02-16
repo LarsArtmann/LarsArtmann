@@ -16,6 +16,9 @@
   <a href="https://github.com/LarsArtmann?tab=followers">
     <img src="https://img.shields.io/github/followers/LarsArtmann?label=Follow&style=flat-square&logo=github&logoColor=white" alt="GitHub followers"/>
   </a>
+  <a href="https://isqi.org/iSAQB-Software-Architecture-Foundation-Level-CPSA-F/CPSA-FL">
+    <img src="https://img.shields.io/badge/iSAQB-CPSA--F%20Certified-4A90D9?style=flat-square&logo=proton&logoColor=white" alt="iSAQB Certified"/>
+  </a>
   <a href="https://larsartmann.com/appointment">
     <img src="https://img.shields.io/badge/Book%20a%20Chat-58A6FF?style=flat-square&logo=calendly&logoColor=white" alt="Book a chat"/>
   </a>
@@ -32,8 +35,8 @@
 ```kotlin
 val lars = Person().apply {
   code = listOf("Kotlin", "Java", "TypeScript", "Rust", "Go", "Python", "C#", "Elixir", "Shell")
-  tools = listOf("Google Cloud", "AWS", "Azure", "Event Sourcing", "IntelliJ")
   architecture = listOf("Enterprise", "Microservices", "Monolith", "MVP")
+  certifications = listOf("iSAQB Certified Professional for Software Architecture (CPSA-F)")
   currentFocus = "Building robust, scalable systems"
   hobbies = listOf("Gaming", "Music", "Finance", "Learning")
 }
