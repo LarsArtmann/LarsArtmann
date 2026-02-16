@@ -16,6 +16,7 @@ jobs:
         with:
           token: ${{ github.token }}
           user: LarsArtmann
+          filename: metrics.svg
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Berlin
