@@ -44,12 +44,4 @@ jobs:
           filename: metrics.repositories.svg
           base: ""
           plugin_repositories: yes
-          plugin_repositories_list: |
-            web-client-errors-mcp
-            clean-wizard
-            typespec-eventsourcing
-            universal-workflow
-            wise-transaction-visualization
-            typespec-sqlc
-            terraform-to-d2
-          plugin_repositories_featured: yes
+          plugin_repositories_featured: web-client-errors-mcp, clean-wizard, typespec-eventsourcing, universal-workflow, wise-transaction-visualization, typespec-sqlc, terraform-to-d2
