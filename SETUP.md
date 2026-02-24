@@ -32,7 +32,7 @@ After adding the secret:
 3. Click **Run workflow** → **Run workflow**
 
 This will generate:
-- `metrics.svg` - Main metrics dashboard
+- `metrics.svg` - Main metrics dashboard (includes achievements)
 - `metrics.repositories.svg` - Featured repositories
 
 ## Features Enabled
@@ -41,11 +41,17 @@ This will generate:
 |---------|--------|-------------|
 | 📅 Isometric Calendar | `isocalendar` | Full-year commit activity visualization |
 | 🈷️ Languages | `languages` | Top 8 languages with detailed analysis |
-| 💡 Habits | `habits` | Coding habits and activity patterns |
-| 🏆 Achievements | `achievements` | Compact achievement badges |
+| 🏆 Achievements | `achievements` | Detailed achievement badges |
 | 🎩 Notable | `notable` | Notable contributions |
-| 📰 Activity | `activity` | Recent GitHub activity |
 | 📓 Repositories | `repositories` | Featured project showcase |
+
+### Private Repository Stats
+
+With the `repo` scope on your PAT, the following will include private repository data:
+- Language statistics
+- Achievement badges
+- Notable contributions
+- Commit activity
 
 ## Dynamic Elements
 
@@ -54,26 +60,44 @@ The profile includes these external services:
 | Service | Purpose |
 |---------|---------|
 | [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy) | Achievement trophies |
-| [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) | Stats cards & top languages |
 | [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) | Contribution streak |
 | [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) | Animated typing header |
 | [capsule-render](https://github.com/kyechan99/capsule-render) | Header/footer waves |
 
-## Future Enhancements (Issue #10)
+## Self-Hosting (Issue #13)
 
-For custom ObservableHQ graphs, consider:
-- Forking [observablehq/oss-analytics](https://github.com/observablehq/oss-analytics/)
-- Deploying to Observable Cloud
-- Embedding custom visualizations
+To include private repository stats in external services and avoid rate limits/outages, you can self-host:
+
+### Vercel Deployment
+
+1. **Trophies** - Fork [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy) and deploy to Vercel:
+   - Add `GITHUB_TOKEN1` environment variable with your PAT (requires `repo` scope)
+   - Update README URL to your Vercel deployment
+
+2. **Streak Stats** - Fork [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) and deploy:
+   - Configure with your PAT for private repo access
+   - Update README URL accordingly
+
+### Benefits of Self-Hosting
+
+- No rate limits (personal API tokens)
+- No outages from shared infrastructure
+- Private repository statistics included
+- Full control over caching and performance
 
 ## Troubleshooting
 
 ### Metrics not updating?
-- Verify `METRICS_TOKEN` secret is valid
+- Verify `METRICS_TOKEN` secret is valid and not expired
 - Check Actions tab for error logs
-- Ensure token has correct permissions
+- Ensure token has `repo` scope for private repo access
 
 ### Images not loading?
 - Run the workflow manually first
 - Check if `metrics.svg` files exist in the repo
 - Verify the image URLs in README.md match the generated files
+
+### External services returning 503?
+- Consider self-hosting (see above)
+- Check if community mirrors are available
+- Verify GitHub API status

@@ -58,7 +58,7 @@ val lars = Person().apply {
 
 <p align="center">
   <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
-    <img src="https://streak-stats.demolab.com?user=LarsArtmann&theme=one_dark&hide_border=true&background=0D1117&stroke=30363D&ring=58A6FF&fire=58A6FF&currLabel=58A6FF"/>
+    <img src="https://streak-stats.demolab.com?user=LarsArtmann&theme=dark&hide_border=true&background=0D1117&stroke=30363D&ring=58A6FF&fire=58A6FF&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=FFFFFF&sideLabels=FFFFFF&dates=FFFFFF"/>
   </a>
 </p>
 
