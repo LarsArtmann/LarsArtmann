@@ -48,22 +48,13 @@ val lars = Person().apply {
 
 <p align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=LarsArtmann&theme=onestar&column=8&margin-w=15&margin-h=15&no-bg=true&rank=-C,-B" width="100%" alt="Trophy"/>
+    <img src="https://github-profile-trophy-kannan.vercel.app/?username=LarsArtmann&theme=onestar&column=8&margin-w=15&margin-h=15&no-bg=true" width="100%" alt="Trophy"/>
   </a>
 </p>
 
 ---
 
-### 📊 GitHub Stats
-
-<p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=LarsArtmann&show_icons=true&theme=one_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF"/>
-  </a>
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LarsArtmann&layout=compact&theme=one_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF"/>
-  </a>
-</p>
+### 📊 Streak Stats
 
 <p align="center">
   <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
