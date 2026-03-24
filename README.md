@@ -1,18 +1,14 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,100:1a1b27&height=120&section=header"/>
 
-## About This Repository
-
-This is the **GitHub profile repository** for [Lars Artmann](https://larsartmann.com), an iSAQB-certified software architect specializing in robust, scalable systems. The repository showcases:
-
-- **Dynamic GitHub Metrics** — Auto-generated SVG visualizations of activity, language usage, achievements, and contributions
-- **Featured Projects** — Highlighting notable open-source work including web-client-errors-mcp, clean-wizard, art-dupl, and template-sqlc
-- **Automated Updates** — Daily refresh via GitHub Actions using [lowlighter/metrics](https://github.com/lowlighter/metrics)
-
 <h1 align="center">
-  <a href="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B+I'm+Lars+Artmann">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B+I'm+Lars+Artmann" alt="Typing SVG" />
+  <a href="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=32&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B+I'm+Lars+Artmann">
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=32&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B+I'm+Lars+Artmann" alt="Typing SVG" />
   </a>
 </h1>
+
+<p align="center">
+  <strong>iSAQB-certified Software Architect</strong> specializing in robust, scalable systems · Building software that makes people's lives easier
+</p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/larsartmann/">
@@ -32,13 +28,9 @@ This is the **GitHub profile repository** for [Lars Artmann](https://larsartmann
   </a>
 </p>
 
-<p align="center">
-  <em>Creating software that makes people's lives easier</em>
-</p>
-
 ---
 
-### 👨‍💻 A little more about me
+### 👨‍💻 About Me
 
 ```kotlin
 val lars = Person().apply {
@@ -111,7 +103,7 @@ val lars = Person().apply {
 ### 🤝 Let's Connect
 
 <p align="center">
-  <em>I love connecting with different people! Feel free to reach out:</em>
+  <em>I'm always open to connecting with interesting people. Reach out anytime:</em>
 </p>
 
 <p align="center">
