@@ -1,5 +1,13 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,100:1a1b27&height=120&section=header"/>
 
+## About This Repository
+
+This is the **GitHub profile repository** for [Lars Artmann](https://larsartmann.com), an iSAQB-certified software architect specializing in robust, scalable systems. The repository showcases:
+
+- **Dynamic GitHub Metrics** — Auto-generated SVG visualizations of activity, language usage, achievements, and contributions
+- **Featured Projects** — Highlighting notable open-source work including web-client-errors-mcp, clean-wizard, art-dupl, and template-sqlc
+- **Automated Updates** — Daily refresh via GitHub Actions using [lowlighter/metrics](https://github.com/lowlighter/metrics)
+
 <h1 align="center">
   <a href="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B+I'm+Lars+Artmann">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&pause=1000&color=58A6FF&center=true&vCenter=true&random=false&width=600&lines=Hi+%F0%9F%91%8B+I'm+Lars+Artmann" alt="Typing SVG" />
