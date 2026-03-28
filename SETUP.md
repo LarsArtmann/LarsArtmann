@@ -27,27 +27,30 @@ The `lowlighter/metrics` action requires a GitHub Personal Access Token with app
 ### 3. Run the Workflow
 
 After adding the secret:
+
 1. Go to the **Actions** tab
 2. Select the **Metrics** workflow
 3. Click **Run workflow** → **Run workflow**
 
 This will generate:
+
 - `metrics.svg` - Main metrics dashboard (includes achievements)
 - `metrics.repositories.svg` - Featured repositories
 
 ## Features Enabled
 
-| Feature | Plugin | Description |
-|---------|--------|-------------|
-| 📅 Isometric Calendar | `isocalendar` | Full-year commit activity visualization |
-| 🈷️ Languages | `languages` | Top 8 languages with detailed analysis |
-| 🏆 Achievements | `achievements` | Detailed achievement badges |
-| 🎩 Notable | `notable` | Notable contributions |
-| 📓 Repositories | `repositories` | Featured project showcase |
+| Feature               | Plugin         | Description                             |
+| --------------------- | -------------- | --------------------------------------- |
+| 📅 Isometric Calendar | `isocalendar`  | Full-year commit activity visualization |
+| 🈷️ Languages          | `languages`    | Top 8 languages with detailed analysis  |
+| 🏆 Achievements       | `achievements` | Detailed achievement badges             |
+| 🎩 Notable            | `notable`      | Notable contributions                   |
+| 📓 Repositories       | `repositories` | Featured project showcase               |
 
 ### Private Repository Stats
 
 With the `repo` scope on your PAT, the following will include private repository data:
+
 - Language statistics
 - Achievement badges
 - Notable contributions
@@ -57,12 +60,12 @@ With the `repo` scope on your PAT, the following will include private repository
 
 The profile includes these external services:
 
-| Service | Purpose |
-|---------|---------|
-| [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy) | Achievement trophies |
-| [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) | Contribution streak |
-| [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) | Animated typing header |
-| [capsule-render](https://github.com/kyechan99/capsule-render) | Header/footer waves |
+| Service                                                                                  | Purpose                |
+| ---------------------------------------------------------------------------------------- | ---------------------- |
+| [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)                 | Achievement trophies   |
+| [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) | Contribution streak    |
+| [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg)                   | Animated typing header |
+| [capsule-render](https://github.com/kyechan99/capsule-render)                            | Header/footer waves    |
 
 ## Self-Hosting (Issue #13)
 
@@ -88,16 +91,19 @@ To include private repository stats in external services and avoid rate limits/o
 ## Troubleshooting
 
 ### Metrics not updating?
+
 - Verify `METRICS_TOKEN` secret is valid and not expired
 - Check Actions tab for error logs
 - Ensure token has `repo` scope for private repo access
 
 ### Images not loading?
+
 - Run the workflow manually first
 - Check if `metrics.svg` files exist in the repo
 - Verify the image URLs in README.md match the generated files
 
 ### External services returning 503?
+
 - Consider self-hosting (see above)
 - Check if community mirrors are available
 - Verify GitHub API status
