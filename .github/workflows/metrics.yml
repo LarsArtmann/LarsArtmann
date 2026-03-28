@@ -1,8 +1,13 @@
 name: Metrics
+
 on:
   schedule: [{ cron: "0 0 * * *" }] # Daily at midnight UTC
   workflow_dispatch:
   push: { branches: ["main", "master"] }
+
+concurrency:
+  group: metrics-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write

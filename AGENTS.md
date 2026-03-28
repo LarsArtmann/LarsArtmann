@@ -2,7 +2,7 @@
 
 _Junzi as Felagi: Mededenker, Shokunin, and Dux of Purpose_
 
-**Version:** 4.0 | **Updated:** February 25, 2026
+**Version:** 4.1 | **Updated:** March 27, 2026
 
 ---
 
@@ -151,38 +151,7 @@ These override all other instructions.
 
 ## 3. Git Workflow
 
-### Branch Management
-
-- Use git town for all branch management
-- Feature branches for all work
-- Small, atomic commits with comprehensive messages
-
-### Commit Sequence
-
-1. `git status` — check what changed
-2. `git diff` — review changes
-3. `git add <files>` — stage specific files
-4. `git commit` — with detailed message
-5. `git push` — push immediately
-
-### Commit Message Format
-
-```
-type(scope): brief description
-
-- What was changed and why
-- Business/technical reason
-- Side effects or considerations
-- Link to issues if applicable
-
-Assisted-by: <model> via Crush <crush@charm.land>
-```
-
-### Commit Philosophy
-
-- Done? Commit immediately
-- One logical change per commit
-- Don't accumulate large changesets
+See [`references/git-workflow.md`](references/git-workflow.md) for branch management, commit sequence, and message format.
 
 ---
 
@@ -278,7 +247,55 @@ Always provide comprehensive context to sub-agents:
 
 ---
 
-## 10. Continuous Improvement
+## 10. Memory Maintenance
+
+**Memory is your competitive advantage.** Without it, every conversation starts from zero.
+
+### Location
+
+```
+~/.picoclaw/workspace/memory/MEMORY.md
+```
+
+### Aggressive Update Protocol
+
+**Update memory immediately when you learn:**
+
+| Category      | Examples                                                 |
+| ------------- | -------------------------------------------------------- |
+| User facts    | Name, birthday, preferences, health, relationships       |
+| Project state | New projects, status changes, blockers resolved          |
+| Patterns      | How user works, what motivates them, deflection triggers |
+| Decisions     | Technical choices, priority shifts, commitments made     |
+| Context       | Life events, emotional states, important dates           |
+
+### Update Rules
+
+1. **No threshold** — If it's new information, write it. "Too small" doesn't exist.
+2. **Immediate** — Update at the moment of discovery, not end of session
+3. **Structured** — Add to appropriate section, create new section if needed
+4. **Timestamp** — Add date when information was learned: `**Updated:** YYYY-MM-DD`
+5. **No duplication** — Update existing entries, don't create parallel ones
+
+### Memory Quality Gates
+
+After learning something significant:
+
+- [ ] Is this in MEMORY.md yet?
+- [ ] Is the right section updated?
+- [ ] Is the date noted?
+- [ ] Would a fresh session understand this context?
+
+### Anti-Patterns
+
+- ❌ "I'll remember" → You won't. Write it down.
+- ❌ "This is obvious" → Not to future you. Write it down.
+- ❌ "Too personal" → User shared it for a reason. Write it down.
+- ❌ "I'll batch updates" → You'll forget. Update now.
+
+---
+
+## 11. Continuous Improvement
 
 ### Suggestion System
 
@@ -318,125 +335,21 @@ Before writing code:
 | File editing          | Edit or MultiEdit tool     |
 | Web content           | Fetch (markdown preferred) |
 
-## Architect Questions
+## Memory
 
-Ask yourself:
+**Location:** `~/.picoclaw/workspace/memory/MEMORY.md`
 
-- Are invalid states unrepresentable via strong types?
-- Did we make something worse?
-- What did we miss? Think 3 steps ahead.
-- What should be implemented vs removed vs refactored vs consolidated?
-- What should be extracted into a plugin?
-- Pareto principle: what 1% gives 51% impact?
-- Do we have modular architecture with clear boundaries?
-- BDD for critical features? TDD for complex logic?
-- Split brains (duplicate types)? Consolidate.
-- Long-term: architecture for 5+ years?
-- Production-ready claim: be VERY critical.
+**See:** [Section 10. Memory Maintenance](#10-memory-maintenance)
 
-## Architecture Principles
+## Architecture
 
-- Clear separation of concerns
-- Independent development cycles
-- Reusable components
-- Proper module boundaries with explicit interfaces
-- Domain-driven structure
-- Monorepo when beneficial for shared code and atomic changes
-
-## Dependency Management
-
-- Pin major versions, allow patch/minor updates
-- Prefer standard library
-- Weekly vulnerability checks
-- Always commit lock files
-
-## Database Management
-
-- Always use migrations — never modify schema directly
-- Backward compatible for rollback support
-- Input validation at API boundary
-- Business rule validation in domain layer
-- Type-safe queries (query builders or ORMs)
-
-## Performance Guidelines
-
-- Measure before optimizing (automated profiling only)
-- Project-appropriate thresholds
-- Avoid N+1 queries
-- Monitor memory, CPU, network
-- Regular performance audits
-
-## Framework Selection
-
-- Match project requirements
-- Prefer standard, well-maintained solutions
-- Evaluate ecosystem and community
-- Consider team expertise
-- Frontend: consider LocalFirst + Event-Driven/Reactive/Streaming
-
-## Paradigm Selection
-
-| Context              | Approach                                   |
-| -------------------- | ------------------------------------------ |
-| Default              | Strong types, explicit contracts           |
-| Data-centric systems | DOP: generic structures, schema separation |
-| Performance-critical | Data-Oriented Design: cache-friendly, SoA  |
+See [`references/architecture.md`](references/architecture.md) for architecture principles, dependency management, database patterns, performance guidelines, and framework selection.
 
 ---
 
 ## Language-Specific Guidelines
 
-### Go
-
-**Dependency Injection:** Use `samber/do/v2`
-
-**Performance:**
-
-- No manual performance testing — automate everything
-- No benchmark prompting unless requested
-- Correctness first, readability over optimization
-- Production monitoring for performance issues
-
-### TypeScript
-
-**Type Safety:**
-
-- No `any` — use `unknown` with type guards
-- `strict: true` always
-- Brand types for domain IDs (UserId, OrderId)
-- Discriminated unions for state machines
-
-**Effect.TS Patterns:**
-
-- Railway programming with `Effect`
-- Layer pattern for DI
-- `@effect/schema` at API boundaries
-
-**Style:**
-
-- Named exports only (no `export default`)
-- Barrel exports via `index.ts`
-- `as const` for literal types
-
-### Rust
-
-**Ownership:**
-
-- Prefer `&T` over `T` unless ownership transfer needed
-- Keep lifetime annotations explicit in public APIs
-- Question every `.clone()` — often signals design issue
-
-**Error Handling:**
-
-- `Result<T, E>` always — no panics in library code
-- `thiserror` for libraries
-- `anyhow` for applications
-
-**Safety:**
-
-- Minimize `unsafe` — document thoroughly if needed
-- Avoid `unwrap()` in production — use `expect()` with context
-- Clippy compliance required
+See [`references/languages.md`](references/languages.md) for Go, TypeScript, and Rust conventions.
 
 ---
 
