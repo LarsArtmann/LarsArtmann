@@ -16,6 +16,10 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+
       - name: Main metrics
         uses: dkhokhlov/metrics@master
         with:
@@ -68,3 +72,12 @@ jobs:
           column: 8
           margin-w: 15
           margin-h: 15
+
+      - name: Commit and push
+        run: |-
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git pull --rebase origin main
+          git add trophies.svg
+          git diff --staged --quiet || git commit -m "Update trophies - [Skip GitHub Action]"
+          git push
