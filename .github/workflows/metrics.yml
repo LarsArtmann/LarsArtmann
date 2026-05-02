@@ -56,3 +56,15 @@ jobs:
           base: ""
           plugin_repositories: yes
           plugin_repositories_featured: dynamic-markdown-site, go-filewatcher, art-dupl, emeet-pixyd, go-branded-id
+
+      - name: Generate trophies
+        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+        with:
+          username: LarsArtmann
+          output_path: trophies.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          theme: onestar
+          no-bg: true
+          column: 8
+          margin-w: 15
+          margin-h: 15
