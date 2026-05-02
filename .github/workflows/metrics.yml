@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Main metrics
-        uses: lowlighter/metrics@latest
+        uses: dkhokhlov/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: LarsArtmann
@@ -48,7 +48,7 @@ jobs:
           plugin_activity: no
 
       - name: Featured repositories
-        uses: lowlighter/metrics@latest
+        uses: dkhokhlov/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: LarsArtmann
