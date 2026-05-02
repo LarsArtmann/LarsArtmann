@@ -65,19 +65,20 @@ jobs:
         uses: Erik-Donath/github-profile-trophy@feature/generate-svg
         with:
           username: LarsArtmann
-          output_path: trophies.svg
+          file: trophies.svg
           token: ${{ secrets.METRICS_TOKEN }}
           theme: onestar
-          no-bg: true
-          column: 8
-          margin-w: 15
-          margin-h: 15
+          no-background: true
+          max-cols: 8
+          margin-width: 15
+          margin-height: 15
 
       - name: Commit and push
         run: |-
           git config user.name github-actions[bot]
           git config user.email github-actions[bot]@users.noreply.github.com
           git pull --rebase origin main
+          cp trophy.svg trophies.svg 2>/dev/null || true
           git add trophies.svg
           git diff --staged --quiet || git commit -m "Update trophies - [Skip GitHub Action]"
           git push
