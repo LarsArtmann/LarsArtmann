@@ -55,4 +55,4 @@ jobs:
           filename: metrics.repositories.svg
           base: ""
           plugin_repositories: yes
-          plugin_repositories_featured: web-client-errors-mcp, clean-wizard, art-dupl, template-sqlc
+          plugin_repositories_featured: dynamic-markdown-site, go-filewatcher, art-dupl, emeet-pixyd, go-branded-id
