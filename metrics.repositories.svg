@@ -183,7 +183,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>LarsArtmann/emeet-pixyd</span>
-                                        <span>created 23 days ago</span>
+                                        <span>created 24 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">Auto-activation daemon for the EMEET PIXY dual-camera AI webcam on Linux — call detection, face tracking, privacy mode, audio switching, HTMX web UI</div>
@@ -236,7 +236,7 @@
                                     </svg>
                                     <div class="name">
                                         <span>LarsArtmann/go-branded-id</span>
-                                        <span>created 24 days ago</span>
+                                        <span>created 25 days ago</span>
                                     </div>
                                 </div>
                                 <div class="field description">Strongly-typed branded identifiers for Go — phantom types prevent mixing entity IDs at compile time. Zero-allocation, stdlib-only, with full serialization (JSON, SQL, Text, Binary, Gob).</div>
