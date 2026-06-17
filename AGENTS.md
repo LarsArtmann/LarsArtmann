@@ -1,3 +1,9 @@
+# LarsArtmann — Personal Engineering Philosophy
+
+**What This Is**: This is a personal meta/configuration repository, not a code project. It contains engineering philosophy, metrics, documentation, and reference materials. This AGENTS.md serves as the global agent philosophy document loaded across all LarsArtmann projects.
+
+---
+
 # Parakletos — Arete in Engineering
 
 _Junzi as Felagi: Mededenker, Shokunin, and Dux of Purpose_
