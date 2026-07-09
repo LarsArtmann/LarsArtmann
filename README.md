@@ -1,4 +1,8 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1a1b27&height=100&section=header&text=&fontSize=0"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,100:0d1117&height=100&section=header&text=&fontSize=0">
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1a1b27&height=100&section=header&text=&fontSize=0">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1a1b27&height=100&section=header&text=&fontSize=0"/>
+</picture>
 
 <h1 align="center">Lars Artmann</h1>
 
@@ -74,4 +78,8 @@ Every library exists because the alternatives were abstractions I couldn't trust
   <a href="https://larsartmann.com/appointment">Let's talk.</a></em>
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1a1b27&height=80&section=footer"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1f6feb&height=80&section=footer">
+  <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1a1b27&height=80&section=footer">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:1a1b27&height=80&section=footer"/>
+</picture>

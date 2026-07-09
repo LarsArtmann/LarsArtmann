@@ -1,9 +1,9 @@
 name: Metrics
 
+# Auto-triggers disabled — SVGs no longer referenced in README.
+# Run manually via GitHub Actions tab if needed.
 on:
-  schedule: [{ cron: "0 0 * * *" }] # Daily at midnight UTC
   workflow_dispatch:
-  push: { branches: ["main", "master"] }
 
 concurrency:
   group: metrics-${{ github.ref }}
