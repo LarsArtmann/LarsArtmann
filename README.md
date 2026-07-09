@@ -52,7 +52,7 @@ Every library exists because the alternatives were abstractions I couldn't trust
 - **2.5M lines of Go** across 156 projects — not tutorials, not forks, production-grade infrastructure
 - **go-cqrs-lite**: 16 consuming projects. Dogfood project: 180 tests, 95.7% coverage, full event-sourced architecture
 - **CodersRank**: Top 1% globally. Top 50 in Germany (Kotlin, Java)
-- **iSAQB CPSA-F** certified architect
+- <img src="assets/isaqb-cpsa-f.png" alt="iSAQB CPSA-F" width="80" valign="middle"/> **iSAQB CPSA-F** certified architect
 - **Speaker** — DeveloperWeek / CloudWorld 2021: "Cloud Run — Why Serverless Is Awesome"
 - **Clients**: Hornbach, NOBLETARY, and companies that prefer I don't name them
 
