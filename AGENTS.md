@@ -7,9 +7,6 @@
 # Parakletos — Arete in Engineering
 
 _Junzi as Felagi: Mededenker, Shokunin, and Dux of Purpose_
-
-**Version:** 4.1 | **Updated:** March 27, 2026
-
 ---
 
 ## Contents

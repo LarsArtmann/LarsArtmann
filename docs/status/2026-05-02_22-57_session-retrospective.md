@@ -32,10 +32,10 @@
 
 ## D) Totally Fucked Up
 
-| #   | Item                                        | Severity | Details                                                                                                                                                                                                                                                                                                                                   |
+| # | Item | Severity | Details |
 | --- | ------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | **Trophy file name mismatch**               | Medium   | Trophy action writes `./trophy.svg` (ignores `file` input). Commit step copies it with `cp trophy.svg trophies.svg 2>/dev/null                                                                                                                                                                                                            |     | true`. This silently swallows errors. If the action ever fixes this or changes behavior, the copy breaks silently. Should investigate if `file` input actually works or remove it. |
-| 2   | **Workflow triggers on every push to main** | Medium   | `push: { branches: ["main", "master"] }` means the metrics workflow triggers itself (it pushes SVGs to main). The `[Skip GitHub Action]` in the commit message is NOT checked by the workflow — it's a convention-only guard. The `concurrency` group with `cancel-in-progress: true` mitigates infinite loops but wastes runner minutes. |
+| 1 | **Trophy file name mismatch** | Medium | Trophy action writes `./trophy.svg` (ignores `file` input). Commit step copies it with `cp trophy.svg trophies.svg 2>/dev/null                                                                                                                                                                                                            |     | true`. This silently swallows errors. If the action ever fixes this or changes behavior, the copy breaks silently. Should investigate if `file` input actually works or remove it. |
+| 2 | **Workflow triggers on every push to main** | Medium | `push: { branches: ["main", "master"] }` means the metrics workflow triggers itself (it pushes SVGs to main). The `[Skip GitHub Action]` in the commit message is NOT checked by the workflow — it's a convention-only guard. The `concurrency` group with `cancel-in-progress: true` mitigates infinite loops but wastes runner minutes. |
 
 ## E) What We Should Improve
 
@@ -67,33 +67,33 @@
 
 Sorted by: **(Impact × Effort) — highest value first**
 
-| Priority | Item                                                                       | Impact  | Effort | Type          |
+| Priority | Item | Impact | Effort | Type |
 | -------- | -------------------------------------------------------------------------- | ------- | ------ | ------------- | --- | ----------- |
-| 1        | Pin actions to commit SHAs                                                 | HIGH    | LOW    | Security      |
-| 2        | Add `[Skip GitHub Action]` guard to workflow trigger                       | HIGH    | LOW    | Reliability   |
-| 3        | Remove `push` trigger (use `schedule` + `workflow_dispatch` only)          | HIGH    | LOW    | Reliability   |
-| 4        | Update project AGENTS.md to v5.0 or remove it                              | MEDIUM  | LOW    | Maintenance   |
-| 5        | Clean `.gitignore` for this repo type                                      | LOW     | LOW    | Hygiene       |
-| 6        | Review SETUP.md for accuracy                                               | UNKNOWN | LOW    | Maintenance   |
-| 7        | Fix trophy file copy error handling (remove `                              |         | true`) | MEDIUM        | LOW | Reliability |
-| 8        | Add `typespec-asyncapi` to featured projects                               | MEDIUM  | LOW    | Presentation  |
-| 9        | Check if lowlighter/metrics#1769 has merged                                | MEDIUM  | LOW    | Maintenance   |
-| 10       | Generate light-theme SVGs for `<picture>` elements                         | MEDIUM  | MEDIUM | Presentation  |
-| 11       | Reduce METRICS_TOKEN to fine-grained PAT                                   | HIGH    | MEDIUM | Security      |
-| 12       | Update About Me Kotlin block                                               | LOW     | LOW    | Presentation  |
-| 13       | Add 2025 GitHub Wrapped image                                              | LOW     | LOW    | Presentation  |
-| 14       | Add `committer_message` with `[Skip GitHub Action]` to metrics action      | LOW     | LOW    | Reliability   |
-| 15       | Verify trophy action `file` input behavior — file upstream issue if broken | MEDIUM  | MEDIUM | Reliability   |
-| 16       | Add `retries: 3` to metrics action for transient API failures              | LOW     | LOW    | Reliability   |
-| 17       | Add workflow step to verify SVGs are valid before committing               | MEDIUM  | MEDIUM | Reliability   |
-| 18       | Consider adding WakaBox/stats for coding time                              | LOW     | MEDIUM | Presentation  |
-| 19       | Consider adding GitHub Skyline 3D contribution graph                       | LOW     | MEDIUM | Presentation  |
-| 20       | Add dependabot for GitHub Actions version updates                          | MEDIUM  | LOW    | Security      |
-| 21       | Add `workflow_dispatch` inputs for manual force-refresh                    | LOW     | LOW    | DX            |
-| 22       | Test with `pull_request` trigger to validate SVG generation before merge   | MEDIUM  | MEDIUM | CI/CD         |
-| 23       | Add badge showing last successful workflow run                             | LOW     | LOW    | Presentation  |
-| 24       | Consider self-hosting github-profile-trophy on Vercel for faster updates   | LOW     | HIGH   | Architecture  |
-| 25       | Document the full architecture in `docs/architecture.md`                   | LOW     | MEDIUM | Documentation |
+| 1 | Pin actions to commit SHAs | HIGH | LOW | Security |
+| 2 | Add `[Skip GitHub Action]` guard to workflow trigger | HIGH | LOW | Reliability |
+| 3 | Remove `push` trigger (use `schedule` + `workflow_dispatch` only) | HIGH | LOW | Reliability |
+| 4 | Update project AGENTS.md to v5.0 or remove it | MEDIUM | LOW | Maintenance |
+| 5 | Clean `.gitignore` for this repo type | LOW | LOW | Hygiene |
+| 6 | Review SETUP.md for accuracy | UNKNOWN | LOW | Maintenance |
+| 7 | Fix trophy file copy error handling (remove `                              |         | true`) | MEDIUM | LOW | Reliability |
+| 8 | Add `typespec-asyncapi` to featured projects | MEDIUM | LOW | Presentation |
+| 9 | Check if lowlighter/metrics#1769 has merged | MEDIUM | LOW | Maintenance |
+| 10 | Generate light-theme SVGs for `<picture>` elements | MEDIUM | MEDIUM | Presentation |
+| 11 | Reduce METRICS_TOKEN to fine-grained PAT | HIGH | MEDIUM | Security |
+| 12 | Update About Me Kotlin block | LOW | LOW | Presentation |
+| 13 | Add 2025 GitHub Wrapped image | LOW | LOW | Presentation |
+| 14 | Add `committer_message` with `[Skip GitHub Action]` to metrics action | LOW | LOW | Reliability |
+| 15 | Verify trophy action `file` input behavior — file upstream issue if broken | MEDIUM | MEDIUM | Reliability |
+| 16 | Add `retries: 3` to metrics action for transient API failures | LOW | LOW | Reliability |
+| 17 | Add workflow step to verify SVGs are valid before committing | MEDIUM | MEDIUM | Reliability |
+| 18 | Consider adding WakaBox/stats for coding time | LOW | MEDIUM | Presentation |
+| 19 | Consider adding GitHub Skyline 3D contribution graph | LOW | MEDIUM | Presentation |
+| 20 | Add dependabot for GitHub Actions version updates | MEDIUM | LOW | Security |
+| 21 | Add `workflow_dispatch` inputs for manual force-refresh | LOW | LOW | DX |
+| 22 | Test with `pull_request` trigger to validate SVG generation before merge | MEDIUM | MEDIUM | CI/CD |
+| 23 | Add badge showing last successful workflow run | LOW | LOW | Presentation |
+| 24 | Consider self-hosting github-profile-trophy on Vercel for faster updates | LOW | HIGH | Architecture |
+| 25 | Document the full architecture in `docs/architecture.md` | LOW | MEDIUM | Documentation |
 
 ## G) My Top #1 Question I Cannot Figure Out Myself
 
