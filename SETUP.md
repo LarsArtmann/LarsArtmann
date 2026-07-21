@@ -6,11 +6,10 @@ This document explains how to set up the dynamic metrics and statistics for this
 
 ### 1. Create a Personal Access Token (PAT)
 
-The `lowlighter/metrics` action requires a GitHub Personal Access Token with appropriate permissions.
+The `dkhokhlov/metrics` action requires a GitHub Personal Access Token with appropriate permissions.
 
 1. Go to [GitHub Settings → Developer settings → Personal access tokens → Tokens (classic)](https://github.com/settings/tokens/new)
 2. Create a new token with these scopes:
-   - `repo` (Full control of private repositories)
    - `read:user` (Read all user profile data)
    - `read:org` (Read org and team membership, read org projects)
    - `user:email` (Access user email addresses)
@@ -35,7 +34,8 @@ After adding the secret:
 This will generate:
 
 - `metrics.svg` - Main metrics dashboard (includes achievements)
-- `metrics.repositories.svg` - Featured repositories
+- `metrics.repositories.svg` - Featured public repositories
+- `trophies.svg` - Achievement trophies
 
 ## Features Enabled
 
@@ -45,16 +45,8 @@ This will generate:
 | 🈷️ Languages          | `languages`    | Top 8 languages with detailed analysis  |
 | 🏆 Achievements       | `achievements` | Detailed achievement badges             |
 | 🎩 Notable            | `notable`      | Notable contributions                   |
-| 📓 Repositories       | `repositories` | Featured project showcase               |
 
-### Private Repository Stats
-
-With the `repo` scope on your PAT, the following will include private repository data:
-
-- Language statistics
-- Achievement badges
-- Notable contributions
-- Commit activity
+All metrics are generated from public data only. The workflow is configured to exclude private repositories.
 
 ## Dynamic Elements
 
@@ -69,23 +61,22 @@ The profile includes these external services:
 
 ## Self-Hosting (Issue #13)
 
-To include private repository stats in external services and avoid rate limits/outages, you can self-host:
+To avoid rate limits and outages from external services, you can self-host the trophy and stats generators:
 
 ### Vercel Deployment
 
 1. **Trophies** - Fork [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy) and deploy to Vercel:
-   - Add `GITHUB_TOKEN1` environment variable with your PAT (requires `repo` scope)
+   - Add `GITHUB_TOKEN1` environment variable with your PAT
    - Update README URL to your Vercel deployment
 
 2. **Streak Stats** - Fork [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) and deploy:
-   - Configure with your PAT for private repo access
+   - Configure with your PAT
    - Update README URL accordingly
 
 ### Benefits of Self-Hosting
 
 - No rate limits (personal API tokens)
 - No outages from shared infrastructure
-- Private repository statistics included
 - Full control over caching and performance
 
 ## Troubleshooting
@@ -94,7 +85,7 @@ To include private repository stats in external services and avoid rate limits/o
 
 - Verify `METRICS_TOKEN` secret is valid and not expired
 - Check Actions tab for error logs
-- Ensure token has `repo` scope for private repo access
+- Ensure token has `read:user` and `read:org` scopes
 
 ### Images not loading?
 

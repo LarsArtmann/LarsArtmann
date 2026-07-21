@@ -26,22 +26,18 @@
 
 ### What I Build
 
-A complete Go ecosystem for event-sourced business applications — from the CQRS engine to the HTMX frontend bridge to the type-safe business primitives.
+Public Go libraries I maintain — from the HTMX frontend bridge to the type-safe business primitives.
 
 Every library exists because the alternatives were abstractions I couldn't trust.
 
 <div align="center">
 
-| Library                                                                                         | What It Does                                                      |
-| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| [**go-cqrs-lite**](https://github.com/LarsArtmann/go-cqrs-lite)                                 | CQRS + Event Sourcing — the Decider pattern, properly implemented |
-| [**cqrs-htmx**](https://github.com/LarsArtmann/cqrs-htmx)                                       | CQRS → HTMX bridge with Casbin auth, CSRF, real-time UI           |
-| [**universal-workflow**](https://github.com/LarsArtmann/universal-workflow)                     | Deterministic workflow engine for business processes              |
-| [**go-branded-id**](https://github.com/LarsArtmann/go-branded-id)                               | Type-safe, branded IDs — because `string` is not a type system    |
-| [**go-composable-business-types**](https://github.com/LarsArtmann/go-composable-business-types) | Email, URL, Money — validated, composable, zero-dependency        |
-| [**cmdguard**](https://github.com/LarsArtmann/cmdguard)                                         | CLI framework that prevents you from shipping broken commands     |
-| [**smart-configs**](https://github.com/LarsArtmann/smart-configs)                               | Configuration that works locally, in CI, and in production        |
-| [**ActaFlow**](https://github.com/LarsArtmann/ActaFlow)                                         | Audit trails as a first-class concern                             |
+| Library                                                                                         | What It Does                                                   |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| [**cqrs-htmx**](https://github.com/LarsArtmann/cqrs-htmx)                                       | CQRS → HTMX bridge with Casbin auth, CSRF, real-time UI        |
+| [**go-branded-id**](https://github.com/LarsArtmann/go-branded-id)                               | Type-safe, branded IDs — because `string` is not a type system |
+| [**go-composable-business-types**](https://github.com/LarsArtmann/go-composable-business-types) | Email, URL, Money — validated, composable, zero-dependency     |
+| [**cmdguard**](https://github.com/LarsArtmann/cmdguard)                                         | CLI framework that prevents you from shipping broken commands  |
 
 </div>
 
@@ -49,19 +45,11 @@ Every library exists because the alternatives were abstractions I couldn't trust
 
 ### The Proof
 
-- **2.5M lines of Go** across 156 projects — not tutorials, not forks, production-grade infrastructure
-- **go-cqrs-lite**: 16 consuming projects. Dogfood project: 180 tests, 95.7% coverage, full event-sourced architecture
+- **Production-grade Go infrastructure** across public repositories — not tutorials, not forks
 - **CodersRank**: Top 1% globally. Top 50 in Germany (Kotlin, Java)
 - <img src="assets/isaqb-cpsa-f.png" alt="iSAQB CPSA-F" width="80" valign="middle"/> **iSAQB CPSA-F** certified architect
 - **Speaker** — DeveloperWeek / CloudWorld 2021: "Cloud Run — Why Serverless Is Awesome"
 - **Clients**: Hornbach, NOBLETARY, and companies that prefer I don't name them
-
----
-
-### What I Write
-
-- [**100 Things I Hate in Modern Software Development**](https://github.com/LarsArtmann/100-things-i-hate) — because every rage point is a design decision
-- [**Perfect Software Architecture for Business Applications**](https://github.com/LarsArtmann/perfect-software-architecture) — a 70-point spec: CQRS, event-sourcing, CRDTs, deterministic simulation testing, homomorphic encryption. The architecture these libraries implement.
 
 ---
 
