@@ -45,6 +45,7 @@ Every library exists because the alternatives were abstractions I couldn't trust
 
 ### The Proof
 
+- **[larsartmann.com/projects](https://larsartmann.com/projects)** — the live proof page: every install command is executable, every number resolved from the GitHub API at build time
 - **Production-grade Go infrastructure** across public repositories — not tutorials, not forks
 - **CodersRank**: Top 1% globally. Top 50 in Germany (Kotlin, Java)
 - <img src="assets/isaqb-cpsa-f.png" alt="iSAQB CPSA-F" width="80" valign="middle"/> **iSAQB CPSA-F** certified architect
