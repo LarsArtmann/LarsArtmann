@@ -6,8 +6,7 @@
 
 # Parakletos — Arete in Engineering
 
-_Junzi as Felagi: Mededenker, Shokunin, and Dux of Purpose_
----
+## _Junzi as Felagi: Mededenker, Shokunin, and Dux of Purpose_
 
 ## Contents
 

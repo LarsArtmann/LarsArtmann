@@ -2,33 +2,33 @@
 
 ## A) Fully Done
 
-| #   | Item                                      | Details                                                                                                                                                                                                                                                          |
-| --- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | **Achievements "Unexpected error" fixed** | Root cause: GitHub deprecated Projects (classic) API. Switched `lowlighter/metrics@latest` → `dkhokhlov/metrics@master` (PR #1769 with Projects V2 migration). User added `read:project` scope to `METRICS_TOKEN`. Verified: zero errors in last successful run. |
-| 2   | **Trophies rendering fixed**              | `github-profile-trophy-kannan.vercel.app` was dead (404). Now generates SVG in-workflow via `Erik-Donath/github-profile-trophy@feature/generate-svg` with `METRICS_TOKEN` — includes private repo data. SVG committed to repo.                                   |
-| 3   | **Featured projects updated**             | Changed from `web-client-errors-mcp, clean-wizard, art-dupl, template-sqlc` → `dynamic-markdown-site, go-filewatcher, art-dupl, emeet-pixyd, go-branded-id`. All verified to exist.                                                                              |
-| 4   | **Workflow end-to-end verified**          | Last 2 runs succeeded. All 3 SVGs generated: `metrics.svg`, `metrics.repositories.svg`, `trophies.svg`. All committed to repo. README references them correctly.                                                                                                 |
+| # | Item                                      | Details                                                                                                                                                                                                                                                          |
+| - | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 | **Achievements "Unexpected error" fixed** | Root cause: GitHub deprecated Projects (classic) API. Switched `lowlighter/metrics@latest` → `dkhokhlov/metrics@master` (PR #1769 with Projects V2 migration). User added `read:project` scope to `METRICS_TOKEN`. Verified: zero errors in last successful run. |
+| 2 | **Trophies rendering fixed**              | `github-profile-trophy-kannan.vercel.app` was dead (404). Now generates SVG in-workflow via `Erik-Donath/github-profile-trophy@feature/generate-svg` with `METRICS_TOKEN` — includes private repo data. SVG committed to repo.                                   |
+| 3 | **Featured projects updated**             | Changed from `web-client-errors-mcp, clean-wizard, art-dupl, template-sqlc` → `dynamic-markdown-site, go-filewatcher, art-dupl, emeet-pixyd, go-branded-id`. All verified to exist.                                                                              |
+| 4 | **Workflow end-to-end verified**          | Last 2 runs succeeded. All 3 SVGs generated: `metrics.svg`, `metrics.repositories.svg`, `trophies.svg`. All committed to repo. README references them correctly.                                                                                                 |
 
 ## B) Partially Done
 
-| #   | Item                             | Status      | What's Left                                                                                                                                                                                                             |
-| --- | -------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | **Security: Action SHA pinning** | NOT STARTED | `dkhokhlov/metrics@master` and `Erik-Donath/github-profile-trophy@feature/generate-svg` are branch refs — if either account is compromised, arbitrary code runs with full `repo`-scoped token. Must pin to commit SHAs. |
-| 2   | **Stale third-party fork**       | TRACKED     | `dkhokhlov/metrics@master` is a temporary fork. Should revert to `lowlighter/metrics@latest` once PR lowlighter/metrics#1769 merges. Needs periodic check.                                                              |
+| # | Item                             | Status      | What's Left                                                                                                                                                                                                             |
+| - | -------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 | **Security: Action SHA pinning** | NOT STARTED | `dkhokhlov/metrics@master` and `Erik-Donath/github-profile-trophy@feature/generate-svg` are branch refs — if either account is compromised, arbitrary code runs with full `repo`-scoped token. Must pin to commit SHAs. |
+| 2 | **Stale third-party fork**       | TRACKED     | `dkhokhlov/metrics@master` is a temporary fork. Should revert to `lowlighter/metrics@latest` once PR lowlighter/metrics#1769 merges. Needs periodic check.                                                              |
 
 ## C) Not Started
 
-| #   | Item                                    | Impact  | Notes                                                                                                                                                |
-| --- | --------------------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | **Light/dark theme for metrics SVG**    | Medium  | Both `<source>` tags in README point to the same dark `metrics.svg`. Could generate a light variant too.                                             |
-| 2   | **2025 GitHub Wrapped image**           | Low     | Section shows 2022–2024 but not 2025.                                                                                                                |
-| 3   | **`typespec-asyncapi` not featured**    | Medium  | 12 stars — most-starred repo by far. Not in featured list.                                                                                           |
-| 4   | **README About Me code block accuracy** | Low     | Lists languages/interests that may be outdated.                                                                                                      |
-| 5   | **`committer_message` customization**   | Low     | Metrics action uses default commit message; could use `[Skip GitHub Action]` to prevent recursive triggers.                                          |
-| 6   | **AGENTS.md in this repo is outdated**  | Medium  | Project-level AGENTS.md is v4.1, global is v5.0. Content diverges (mentions `justfile`, wrong memory path `~/.picoclaw/workspace/memory/MEMORY.md`). |
-| 7   | **`docs/` directory**                   | New     | Created for this report. Could hold architecture decisions, status reports, etc.                                                                     |
-| 8   | **`.gitignore` is Go-specific**         | Low     | Contains Go patterns (`*.test`, `vendor/`, `go.work`) but this is a docs/profile repo. Not harmful but misleading.                                   |
-| 9   | **SETUP.md review**                     | Unknown | Haven't read it yet — may be outdated.                                                                                                               |
+| # | Item                                    | Impact  | Notes                                                                                                                                                |
+| - | --------------------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 | **Light/dark theme for metrics SVG**    | Medium  | Both `<source>` tags in README point to the same dark `metrics.svg`. Could generate a light variant too.                                             |
+| 2 | **2025 GitHub Wrapped image**           | Low     | Section shows 2022–2024 but not 2025.                                                                                                                |
+| 3 | **`typespec-asyncapi` not featured**    | Medium  | 12 stars — most-starred repo by far. Not in featured list.                                                                                           |
+| 4 | **README About Me code block accuracy** | Low     | Lists languages/interests that may be outdated.                                                                                                      |
+| 5 | **`committer_message` customization**   | Low     | Metrics action uses default commit message; could use `[Skip GitHub Action]` to prevent recursive triggers.                                          |
+| 6 | **AGENTS.md in this repo is outdated**  | Medium  | Project-level AGENTS.md is v4.1, global is v5.0. Content diverges (mentions `justfile`, wrong memory path `~/.picoclaw/workspace/memory/MEMORY.md`). |
+| 7 | **`docs/` directory**                   | New     | Created for this report. Could hold architecture decisions, status reports, etc.                                                                     |
+| 8 | **`.gitignore` is Go-specific**         | Low     | Contains Go patterns (`*.test`, `vendor/`, `go.work`) but this is a docs/profile repo. Not harmful but misleading.                                   |
+| 9 | **SETUP.md review**                     | Unknown | Haven't read it yet — may be outdated.                                                                                                               |
 
 ## D) Totally Fucked Up
 
@@ -75,7 +75,7 @@ Sorted by: **(Impact × Effort) — highest value first**
 | 4 | Update project AGENTS.md to v5.0 or remove it | MEDIUM | LOW | Maintenance |
 | 5 | Clean `.gitignore` for this repo type | LOW | LOW | Hygiene |
 | 6 | Review SETUP.md for accuracy | UNKNOWN | LOW | Maintenance |
-| 7 | Fix trophy file copy error handling (remove `                              |         | true`) | MEDIUM | LOW | Reliability |
+| 7 | Fix trophy file copy error handling (remove `|         | true`) | MEDIUM | LOW | Reliability |
 | 8 | Add `typespec-asyncapi` to featured projects | MEDIUM | LOW | Presentation |
 | 9 | Check if lowlighter/metrics#1769 has merged | MEDIUM | LOW | Maintenance |
 | 10 | Generate light-theme SVGs for `<picture>` elements | MEDIUM | MEDIUM | Presentation |
