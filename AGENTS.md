@@ -1,17 +1,17 @@
 # LarsArtmann/LarsArtmann — GitHub Profile Repository
 
-**What this is**: The special repository that renders the profile README at [github.com/LarsArtmann](https://github.com/LarsArtmann). It is a sales surface, not a code project. The actual website lives in [larsartmann.com](https://github.com/LarsArtmann/larsartmann.com) (Astro, deployed to Firebase Hosting) — its `/projects` page is the live proof page this profile links to.
+**What this is**: The special repository that renders the profile README at [github.com/LarsArtmann](https://github.com/LarsArtmann). It is a sales surface, not a code project. The actual website lives in [larsartmann.com](https://github.com/LarsArtmann/larsartmann.com) — **private repo** (link checkers like lychee report 404 for it; that is expected, not a broken link), Astro, deployed to Firebase Hosting — and its `/projects` page is the live proof page this profile links to.
 
 ## Layout
 
-| Path | Role |
-| --- | --- |
-| `README.md` | The profile sales page. The only file rendered on the GitHub profile. |
+| Path                            | Role                                                                                                             |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `README.md`                     | The profile sales page. The only file rendered on the GitHub profile.                                            |
 | `.github/workflows/metrics.yml` | Metrics + trophy SVG generation. **Manual-only** (`workflow_dispatch`); auto-triggers are deliberately disabled. |
-| `.github/dependabot.yml` | Weekly grouped bumps for GitHub Actions. |
-| `SETUP.md` | `METRICS_TOKEN` setup and workflow runbook. |
-| `docs/status/` | Session status reports. Resolved ones are annotated inline (strikethrough) and moved to `docs/status/archived/`. |
-| `assets/` | README imagery (iSAQB CPSA-F logo). |
+| `.github/dependabot.yml`        | Weekly grouped bumps for GitHub Actions.                                                                         |
+| `SETUP.md`                      | `METRICS_TOKEN` setup and workflow runbook.                                                                      |
+| `docs/status/`                  | Session status reports. Resolved ones are annotated inline (strikethrough) and moved to `docs/status/archived/`. |
+| `assets/`                       | README imagery (iSAQB CPSA-F logo).                                                                              |
 
 ## Gotchas
 

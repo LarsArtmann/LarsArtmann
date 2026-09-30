@@ -32,13 +32,13 @@ Every library exists because the alternatives were abstractions I couldn't trust
 
 <div align="center">
 
-| Library                                                                                         | What It Does                                                   |
-| ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| [**typespec-asyncapi**](https://github.com/LarsArtmann/typespec-asyncapi)                       | The missing AsyncAPI 3.1 emitter for TypeSpec — adopted by Swiss Post |
-| [**cqrs-htmx**](https://github.com/LarsArtmann/cqrs-htmx)                                       | CQRS → HTMX bridge: templ views, Casbin auth, framework-agnostic handlers |
-| [**go-branded-id**](https://github.com/LarsArtmann/go-branded-id)                               | Type-safe, branded IDs — because `string` is not a type system |
+| Library                                                                                         | What It Does                                                                |
+| ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| [**typespec-asyncapi**](https://github.com/LarsArtmann/typespec-asyncapi)                       | The missing AsyncAPI 3.1 emitter for TypeSpec — adopted by Swiss Post       |
+| [**cqrs-htmx**](https://github.com/LarsArtmann/cqrs-htmx)                                       | CQRS → HTMX bridge: templ views, Casbin auth, framework-agnostic handlers   |
+| [**go-branded-id**](https://github.com/LarsArtmann/go-branded-id)                               | Type-safe, branded IDs — because `string` is not a type system              |
 | [**go-composable-business-types**](https://github.com/LarsArtmann/go-composable-business-types) | Composable business types — bitemporal tracking, actor chains, audit trails |
-| [**cmdguard**](https://github.com/LarsArtmann/cmdguard)                                         | CLI framework that prevents you from shipping broken commands  |
+| [**cmdguard**](https://github.com/LarsArtmann/cmdguard)                                         | CLI framework that prevents you from shipping broken commands               |
 
 </div>
 
@@ -46,7 +46,7 @@ Every library exists because the alternatives were abstractions I couldn't trust
 
 ### The Proof
 
-- **[larsartmann.com/projects](https://larsartmann.com/projects)** — the live proof page: every install command is executable, every number resolved from the GitHub API at build time
+- **[larsartmann.com/projects](https://larsartmann.com/projects)** — the live proof page: every install command is executable, every number resolved from a pinned monthly GitHub API snapshot
 - **Production-grade Go infrastructure** across public repositories — not tutorials, not forks
 - **CodersRank**: Top 1% globally. Top 50 in Germany (Kotlin, Java)
 - <img src="assets/isaqb-cpsa-f.png" alt="iSAQB CPSA-F" width="80" valign="middle"/> **iSAQB CPSA-F** certified architect

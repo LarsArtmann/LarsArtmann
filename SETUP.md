@@ -54,10 +54,10 @@ All metrics are generated from public data only. The workflow is configured to e
 
 The profile includes these external services:
 
-| Service                                                                                  | Purpose                |
-| ---------------------------------------------------------------------------------------- | ---------------------- |
-| [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)                 | Achievement trophies   |
-| [capsule-render](https://github.com/kyechan99/capsule-render)                            | Header/footer waves    |
+| Service                                                                  | Purpose              |
+| ------------------------------------------------------------------------ | -------------------- |
+| [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy) | Achievement trophies |
+| [capsule-render](https://github.com/kyechan99/capsule-render)            | Header/footer waves  |
 
 ## Self-Hosting (Issue #13)
 
