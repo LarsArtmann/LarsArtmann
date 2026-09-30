@@ -26,4 +26,5 @@
 ## Working on the sales page
 
 - Feature claims in `README.md` must be verifiable: every linked repository should exist, be pushed recently, and match its one-liner. Star counts are deliberately **not** hardcoded (they rot); relative proofs like "adopted by Swiss Post" are.
-- The canonical numbers, install commands, and project curation live on larsartmann.com `/projects` (resolved from the GitHub API at build time). Keep the profile consistent with it — do not duplicate numbers here.
+- Showcase selection is curated, never inherited: re-justify the table every pass against (a) adoption proof and (b) the architect-identity story (CQRS/ES). Verify licenses — proprietary work (go-cqrs-lite) is featured with an explicit `(proprietary)` marker so the page can never imply everything is open source.
+- The canonical numbers, install commands, and project curation live on larsartmann.com `/projects` (resolved from a pinned monthly GitHub API snapshot). Keep the profile consistent with it — do not duplicate numbers here.

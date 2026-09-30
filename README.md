@@ -26,19 +26,19 @@
 
 ### What I Build
 
-Open source I maintain — the AsyncAPI emitter Swiss Post adopted, and the type-safe Go primitives underneath.
+What I maintain — the AsyncAPI emitter Swiss Post adopted, a multi-module CQRS + Event Sourcing framework, and the open-source tooling around them.
 
 Every library exists because the alternatives were abstractions I couldn't trust.
 
 <div align="center">
 
-| Library                                                                                         | What It Does                                                                |
-| ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| [**typespec-asyncapi**](https://github.com/LarsArtmann/typespec-asyncapi)                       | The missing AsyncAPI 3.1 emitter for TypeSpec — adopted by Swiss Post       |
-| [**cqrs-htmx**](https://github.com/LarsArtmann/cqrs-htmx)                                       | CQRS → HTMX bridge: templ views, Casbin auth, framework-agnostic handlers   |
-| [**go-branded-id**](https://github.com/LarsArtmann/go-branded-id)                               | Type-safe, branded IDs — because `string` is not a type system              |
-| [**go-composable-business-types**](https://github.com/LarsArtmann/go-composable-business-types) | Composable business types — bitemporal tracking, actor chains, audit trails |
-| [**cmdguard**](https://github.com/LarsArtmann/cmdguard)                                         | CLI framework that prevents you from shipping broken commands               |
+| Project                                                                                         | What It Does                                                                                          |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| [**typespec-asyncapi**](https://github.com/LarsArtmann/typespec-asyncapi)                       | The missing AsyncAPI 3.1 emitter for TypeSpec — adopted by Swiss Post                                 |
+| [**go-cqrs-lite**](https://github.com/LarsArtmann/go-cqrs-lite)                                 | CQRS + Event Sourcing for Go — a composable multi-module library, without the framework tax (proprietary) |
+| [**cqrs-htmx**](https://github.com/LarsArtmann/cqrs-htmx)                                       | Wires go-cqrs-lite commands and queries to HTMX UIs — Casbin auth, CSRF, and SSE built in              |
+| [**templ-components**](https://github.com/LarsArtmann/templ-components)                         | 97 server-rendered Go components — templ + HTMX + Tailwind v4, dark mode and CSP built in              |
+| [**emeet-pixyd**](https://github.com/LarsArtmann/emeet-pixyd)                                   | Linux daemon that makes the EMEET PIXY dual-camera AI webcams actually usable — PTZ, privacy-first     |
 
 </div>
 
