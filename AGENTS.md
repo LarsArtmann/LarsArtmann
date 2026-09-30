@@ -27,4 +27,5 @@
 
 - Feature claims in `README.md` must be verifiable: every linked repository should exist, be pushed recently, and match its one-liner. Star counts are deliberately **not** hardcoded (they rot); relative proofs like "adopted by Swiss Post" are.
 - Showcase selection is curated, never inherited: re-justify the table every pass against (a) adoption proof and (b) the architect-identity story (CQRS/ES). Verify licenses — proprietary work (go-cqrs-lite) is featured with an explicit `(proprietary)` marker so the page can never imply everything is open source.
+- Division of labor with larsartmann.com is deliberate: the profile curates proof + identity (including proprietary work); the site curates installable open source above its own curation trigger. The two lists intentionally differ — do not "sync" them mechanically.
 - The canonical numbers, install commands, and project curation live on larsartmann.com `/projects` (resolved from a pinned monthly GitHub API snapshot). Keep the profile consistent with it — do not duplicate numbers here.

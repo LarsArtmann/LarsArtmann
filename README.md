@@ -38,7 +38,7 @@ Every library exists because the alternatives were abstractions I couldn't trust
 | [**go-cqrs-lite**](https://github.com/LarsArtmann/go-cqrs-lite)           | CQRS + Event Sourcing for Go — a composable multi-module library, without the framework tax (proprietary) |
 | [**cqrs-htmx**](https://github.com/LarsArtmann/cqrs-htmx)                 | Wires go-cqrs-lite commands and queries to HTMX UIs — Casbin auth, CSRF, and SSE built in                 |
 | [**templ-components**](https://github.com/LarsArtmann/templ-components)   | 97 server-rendered Go components — templ + HTMX + Tailwind v4, dark mode and CSP built in                 |
-| [**emeet-pixyd**](https://github.com/LarsArtmann/emeet-pixyd)             | Linux daemon that makes the EMEET PIXY dual-camera AI webcams actually usable — PTZ, privacy-first        |
+| [**emeet-pixyd**](https://github.com/LarsArtmann/emeet-pixyd)             | Linux daemon that makes the EMEET PIXY and PIXY 2K dual-camera AI webcams actually usable — PTZ, privacy-first        |
 
 </div>
 
@@ -48,7 +48,7 @@ Every library exists because the alternatives were abstractions I couldn't trust
 
 - **[larsartmann.com/projects](https://larsartmann.com/projects)** — the live proof page: every install command is executable, every number resolved from a pinned monthly GitHub API snapshot
 - **Production-grade Go infrastructure** across public repositories — not tutorials, not forks
-- **CodersRank**: Top 1% globally. Top 50 in Germany (Kotlin, Java)
+- **CodersRank**: Top 1% globally; Kotlin and Java top 10% worldwide (2026-09)
 - <img src="assets/isaqb-cpsa-f.png" alt="iSAQB CPSA-F" width="80" valign="middle"/> **iSAQB CPSA-F** certified architect
 - **Speaker** — DeveloperWeek / CloudWorld 2021: "Cloud Run — Why Serverless Is Awesome"
 - **Clients**: Hornbach, NOBLETARY, and companies that prefer I don't name them

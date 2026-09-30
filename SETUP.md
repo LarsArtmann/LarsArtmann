@@ -12,9 +12,10 @@ The `dkhokhlov/metrics` action requires a GitHub Personal Access Token with appr
 
 1. Go to [GitHub Settings → Developer settings → Personal access tokens → Tokens (classic)](https://github.com/settings/tokens/new)
 2. Create a new token with these scopes:
+   - `repo` (full control of repositories — the workflow checks out and pushes with it; TODO_LIST T2 replaces this with a fine-grained, repo-scoped PAT)
    - `read:user` (Read all user profile data)
    - `read:org` (Read org and team membership, read org projects)
-   - `user:email` (Access user email addresses)
+   - `read:project` (Read Projects V2 — required by the achievements plugin on the `dkhokhlov/metrics` fork)
 3. Copy the generated token
 
 ### 2. Add the Token as a Repository Secret
@@ -69,10 +70,6 @@ To avoid rate limits and outages from external services, you can self-host the t
    - Add `GITHUB_TOKEN1` environment variable with your PAT
    - Update README URL to your Vercel deployment
 
-2. **Streak Stats** - Fork [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) and deploy:
-   - Configure with your PAT
-   - Update README URL accordingly
-
 ### Benefits of Self-Hosting
 
 - No rate limits (personal API tokens)
@@ -85,7 +82,7 @@ To avoid rate limits and outages from external services, you can self-host the t
 
 - Verify `METRICS_TOKEN` secret is valid and not expired
 - Check Actions tab for error logs
-- Ensure token has `read:user` and `read:org` scopes
+- Ensure token has `read:user`, `read:org`, and `read:project` scopes
 
 ### Images not loading?
 
