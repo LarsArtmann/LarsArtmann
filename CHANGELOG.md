@@ -7,6 +7,13 @@ All notable changes to this repository, newest first. This file was started 2026
 - Documentation health pass: rewrote `AGENTS.md` as repo-specific context (it previously duplicated the global engineering philosophy and pointed at nonexistent `references/` files), added `FEATURES.md`, `TODO_LIST.md`, `ROADMAP.md`, and this `CHANGELOG.md`, corrected `SETUP.md` drift, featured `typespec-asyncapi` in the README, and annotated + archived the 2026-05-02 session report to `docs/status/archived/`.
 - README showcase reshaped around proof + identity: now features typespec-asyncapi, go-cqrs-lite (proprietary, labeled as such), cqrs-htmx, templ-components, and emeet-pixyd. The previous three 1★ primitive rows (go-branded-id, go-composable-business-types, cmdguard) were dropped from the table — they remain curated on larsartmann.com/projects.
 - GitHub Actions pinned to commit SHAs; Dependabot added for weekly grouped action updates; metrics workflow auto-triggers disabled (`9ea8677`).
+- Second docs-health pass (VERIFY + HARVEST): the CodersRank proof line now matches the verified public profile — Top 1% globally, Kotlin and Java top 10% worldwide (2026-09); the previous "Top 50 in Germany (Kotlin, Java)" claim contradicted the Switzerland-based ranks shown at profile.codersrank.io/user/LarsArtmann.
+- emeet-pixyd one-liner now names both camera models (EMEET PIXY and PIXY 2K), matching the official repo description.
+- `AGENTS.md` codifies the profile↔site curation split (profile = proof + identity incl. proprietary; site = installable open source) so the two intentionally different lists stop looking like drift.
+- `SETUP.md` token scopes fixed — `read:project` was missing (the achievements plugin reads Projects V2) — and the phantom streak-stats self-hosting advice was removed.
+- TODO_LIST T4 executed: Go-specific `.gitignore` template patterns stripped (this repo contains no Go code; the buildflow-managed block is untouched).
+- Repo About surface audited: description and topics are empty and the pinned repositories still mirror the pre-reshape curation; fix routed to TODO_LIST T6 (GitHub settings, owner action).
+- TODO_LIST harvested from both same-day status reports: T6 (About surface + pins), T7 (proprietary framing decision), T8 (docs-site links), T9 (quarterly pass cadence), T10 (lychee excludes + `.buildflow.yml`), T11 (re-verification script), T12 (clients/speaker proof re-justification).
 
 ## 2026-09-10
 

@@ -1,6 +1,6 @@
 # Status Report — 2026-05-02 22:57
 
-> Archived 2026-09-30 (docs-health pass): every item below carries an inline verdict — strikethrough = resolved, `→ TODO_LIST`/`→ ROADMAP` = forwarded open work. Open items live in `TODO_LIST.md` (T1–T5) and `ROADMAP.md`.
+> Archived 2026-09-30 (docs-health pass): every item below carries an inline verdict — strikethrough = resolved, `→ TODO_LIST`/`→ ROADMAP` = forwarded open work. Open items live in `TODO_LIST.md` and `ROADMAP.md`.
 
 ## A) Fully Done
 

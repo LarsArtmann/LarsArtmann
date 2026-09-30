@@ -32,13 +32,13 @@ Every library exists because the alternatives were abstractions I couldn't trust
 
 <div align="center">
 
-| Project                                                                   | What It Does                                                                                              |
-| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [**typespec-asyncapi**](https://github.com/LarsArtmann/typespec-asyncapi) | The missing AsyncAPI 3.1 emitter for TypeSpec — adopted by Swiss Post                                     |
-| [**go-cqrs-lite**](https://github.com/LarsArtmann/go-cqrs-lite)           | CQRS + Event Sourcing for Go — a composable multi-module library, without the framework tax (proprietary) |
-| [**cqrs-htmx**](https://github.com/LarsArtmann/cqrs-htmx)                 | Wires go-cqrs-lite commands and queries to HTMX UIs — Casbin auth, CSRF, and SSE built in                 |
-| [**templ-components**](https://github.com/LarsArtmann/templ-components)   | 97 server-rendered Go components — templ + HTMX + Tailwind v4, dark mode and CSP built in                 |
-| [**emeet-pixyd**](https://github.com/LarsArtmann/emeet-pixyd)             | Linux daemon that makes the EMEET PIXY and PIXY 2K dual-camera AI webcams actually usable — PTZ, privacy-first        |
+| Project                                                                   | What It Does                                                                                                   |
+| ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| [**typespec-asyncapi**](https://github.com/LarsArtmann/typespec-asyncapi) | The missing AsyncAPI 3.1 emitter for TypeSpec — adopted by Swiss Post                                          |
+| [**go-cqrs-lite**](https://github.com/LarsArtmann/go-cqrs-lite)           | CQRS + Event Sourcing for Go — a composable multi-module library, without the framework tax (proprietary)      |
+| [**cqrs-htmx**](https://github.com/LarsArtmann/cqrs-htmx)                 | Wires go-cqrs-lite commands and queries to HTMX UIs — Casbin auth, CSRF, and SSE built in                      |
+| [**templ-components**](https://github.com/LarsArtmann/templ-components)   | 97 server-rendered Go components — templ + HTMX + Tailwind v4, dark mode and CSP built in                      |
+| [**emeet-pixyd**](https://github.com/LarsArtmann/emeet-pixyd)             | Linux daemon that makes the EMEET PIXY and PIXY 2K dual-camera AI webcams actually usable — PTZ, privacy-first |
 
 </div>
 
