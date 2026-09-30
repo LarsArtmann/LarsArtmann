@@ -5,6 +5,7 @@ All notable changes to this repository, newest first. This file was started 2026
 ## 2026-09-30
 
 - Documentation health pass: rewrote `AGENTS.md` as repo-specific context (it previously duplicated the global engineering philosophy and pointed at nonexistent `references/` files), added `FEATURES.md`, `TODO_LIST.md`, `ROADMAP.md`, and this `CHANGELOG.md`, corrected `SETUP.md` drift, featured `typespec-asyncapi` in the README, and annotated + archived the 2026-05-02 session report to `docs/status/archived/`.
+- README showcase reshaped around proof + identity: now features typespec-asyncapi, go-cqrs-lite (proprietary, labeled as such), cqrs-htmx, templ-components, and emeet-pixyd. The previous three 1★ primitive rows (go-branded-id, go-composable-business-types, cmdguard) were dropped from the table — they remain curated on larsartmann.com/projects.
 - GitHub Actions pinned to commit SHAs; Dependabot added for weekly grouped action updates; metrics workflow auto-triggers disabled (`9ea8677`).
 
 ## 2026-09-10
