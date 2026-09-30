@@ -20,7 +20,7 @@
 - Every `uses:` is pinned to a commit SHA (supply-chain rule). Dependabot opens weekly grouped PRs against those pins.
 - Metrics run on the `dkhokhlov/metrics` fork (Projects V2 migration) because upstream [lowlighter/metrics#1769](https://github.com/lowlighter/metrics/pull/1769) was still unmerged as of 2026-09-30. If it merges, switch back to upstream and pin its SHA (TODO_LIST T3).
 - `METRICS_TOKEN` is a classic PAT with `repo`, `read:user`, `read:org`, `read:project` scope. Replacing it with a fine-grained, repo-scoped PAT is TODO_LIST T2.
-- Formatting via dprint (`dprint.json`). There is no build system, no tests, nothing to compile — `nix flake check` does not apply here.
+- Quality automation runs through **BuildFlow** (`buildflow format` / `buildflow --build-mode lightning`) — it owns dprint formatting (`dprint.json`), the gitignore block, and the link check (lychee). There is no build system, no tests, nothing to compile — `nix flake check` does not apply here.
 - An auto-commit daemon commits working-tree changes continuously. Expect commits you did not make; never fight them with resets.
 
 ## Working on the sales page
