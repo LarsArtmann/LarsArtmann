@@ -1,0 +1,13 @@
+# TODO List
+
+Short- and mid-term actionable work, highest impact first. Done items are removed (they live in `CHANGELOG.md`); long-term ideas live in `ROADMAP.md`.
+
+| # | Task | Why | Evidence | Status |
+| --- | --- | --- | --- | --- |
+| T1 | Fix trophy output handling: verify the action's `file` input against Erik-Donath/github-profile-trophy, drop the `cp trophy.svg trophies.svg 2>/dev/null \|\| true` workaround, stop swallowing copy errors | If the action's behavior ever changes, the workflow breaks silently — the current pipeline cannot fail loudly | `.github/workflows/metrics.yml:81`; source: 2026-05-02 report D1/F7/F15 | OPEN |
+| T2 | Replace `METRICS_TOKEN` with a fine-grained PAT scoped to this repository only | The current classic PAT carries full `repo` scope across every repository — a compromised workflow action could rewrite anything | `SETUP.md`; source: 2026-05-02 report F11 | OPEN — requires a GitHub settings action by Lars |
+| T3 | Watch [lowlighter/metrics#1769](https://github.com/lowlighter/metrics/pull/1769); when merged, switch back to upstream and pin its SHA | The `dkhokhlov/metrics` fork is a temporary dependency carried since 2026-05; unverified third-party code runs with the metrics token | `.github/workflows/metrics.yml:24`; verified unmerged via API 2026-09-30; source: report B2/F9 | OPEN |
+| T4 | Strip Go-specific patterns from `.gitignore` | This repository contains no Go code; `*.test`, `vendor/`, `go.work` blocks mislead readers (keep the buildflow-managed block) | `.gitignore:1-25`; source: 2026-05-02 report C8/F5 | OPEN |
+| T5 | Decide the fate of the generated SVGs: delete `metrics.svg`, `metrics.repositories.svg`, `trophies.svg`, or reintroduce them into the README with a `schedule` trigger | Dead artifacts plus a manual-only workflow nobody runs is drift; either commit to live metrics or remove them | `.github/workflows/metrics.yml:3-4`; source: report F3/F10/F23 | OPEN — decision needed |
+
+**Source:** harvested from `docs/status/archived/2026-05-02_22-57_session-retrospective.md` (annotated + archived 2026-09-30).

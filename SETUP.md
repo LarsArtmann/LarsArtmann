@@ -2,6 +2,8 @@
 
 This document explains how to set up the dynamic metrics and statistics for this GitHub profile.
 
+> **Current state (2026-09-30):** the workflow runs **manually only** (`workflow_dispatch`) and the generated SVGs are **not displayed** in `README.md`. This runbook exists so the workflow can be regenerated on demand if live metrics are reintroduced (see `TODO_LIST.md` T5).
+
 ## Required Setup
 
 ### 1. Create a Personal Access Token (PAT)
@@ -55,8 +57,6 @@ The profile includes these external services:
 | Service                                                                                  | Purpose                |
 | ---------------------------------------------------------------------------------------- | ---------------------- |
 | [github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)                 | Achievement trophies   |
-| [github-readme-streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) | Contribution streak    |
-| [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg)                   | Animated typing header |
 | [capsule-render](https://github.com/kyechan99/capsule-render)                            | Header/footer waves    |
 
 ## Self-Hosting (Issue #13)
@@ -89,9 +89,9 @@ To avoid rate limits and outages from external services, you can self-host the t
 
 ### Images not loading?
 
-- Run the workflow manually first
-- Check if `metrics.svg` files exist in the repo
-- Verify the image URLs in README.md match the generated files
+- The generated SVGs are **not embedded** in `README.md`; nothing on the profile depends on them
+- Check if `metrics.svg` files exist in the repo if you expect to re-embed them
+- Re-embedding requires reintroducing the workflow trigger first (see `TODO_LIST.md` T5)
 
 ### External services returning 503?
 

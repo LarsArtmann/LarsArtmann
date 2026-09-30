@@ -1,0 +1,19 @@
+# Features
+
+Honest inventory of what this repository ships. Every status answers one question: does working code exist, and if not, why not?
+
+**Counts (computed 2026-09-30):** 5 FULLY_FUNCTIONAL · 3 PARTIALLY_FUNCTIONAL · 0 BROKEN · 1 DISABLED · 0 PLANNED
+
+| Feature | Status | Evidence | Notes |
+| --- | --- | --- | --- |
+| Profile README sales page | FULLY_FUNCTIONAL | `README.md` | Rendered at github.com/LarsArtmann. All external links verified 2026-09-30: larsartmann.com, /projects, /appointment (Cal.com booking page loads), LinkedIn, and all five library repos. |
+| Featured library showcase | FULLY_FUNCTIONAL | `README.md` (What I Build table) | All five repos verified via GitHub API 2026-09-30: exist, public, pushed within the last 24 hours. One-liners match current repo descriptions. |
+| Session report archive | FULLY_FUNCTIONAL | `docs/status/archived/` | Historical reports annotated inline; strikethrough = resolved. |
+| Dependabot action updates | FULLY_FUNCTIONAL | `.github/dependabot.yml` | Weekly, `github-actions` ecosystem, grouped into one PR. |
+| iSAQB CPSA-F badge | FULLY_FUNCTIONAL | `assets/isaqb-cpsa-f.png` | Rendered in the README proof section since 628d9b6. |
+| Metrics workflow (main SVG: achievements, languages, notable) | PARTIALLY_FUNCTIONAL | `.github/workflows/metrics.yml:23-52` | Generates on manual dispatch via the `dkhokhlov/metrics` fork (upstream lowlighter/metrics#1769 still unmerged 2026-09-30). Output SVG is not displayed anywhere. |
+| Metrics workflow (featured repositories SVG) | PARTIALLY_FUNCTIONAL | `.github/workflows/metrics.yml:54-62` | Same fork dependency; featured list last updated 2026-05-02. Output SVG is not displayed. |
+| Trophy SVG generation | PARTIALLY_FUNCTIONAL | `.github/workflows/metrics.yml:64-84` | Works, but depends on the `cp trophy.svg trophies.svg` workaround for the action's ignored `file` input; copy errors are silently swallowed (TODO_LIST T1). |
+| Metrics auto-refresh | DISABLED | `.github/workflows/metrics.yml:3-6` | Code is correct and SHA-pinned, but execution is switched off by design: no `schedule`/`push` triggers, `workflow_dispatch` only. Unblock by running the workflow manually, or reintroduce triggers per TODO_LIST T5. |
+
+Deliberately absent (not "planned"): tests and CI beyond Dependabot — this repository has nothing to compile or test; its only executable is the metrics workflow.
